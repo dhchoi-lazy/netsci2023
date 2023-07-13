@@ -1,34 +1,45 @@
 {
   "files": {
-    "main.css": "/netsci2023/static/css/main.86e79b76.css",
-    "main.js": "/netsci2023/static/js/main.e380de56.js",
+    "main.css": "/netsci2023/static/css/main.e64a5375.css",
+    "main.js": "/netsci2023/static/js/main.219de523.js",
+    "static/media/ajd2.png": "/netsci2023/static/media/ajd2.fbab8588db57b931bb50.png",
     "static/media/header-none.svg": "/netsci2023/static/media/header-none.ba650de47094b6d566cb4cf0e78a0564.svg",
     "static/media/header-color.svg": "/netsci2023/static/media/header-color.e12814ca9bb9043fbd4952510051e960.svg",
     "static/media/slide1.svg": "/netsci2023/static/media/slide1.5f7866c76c149d90344ffc7e0ce69635.svg",
     "static/media/slide3.svg": "/netsci2023/static/media/slide3.ebdcffd2c81aa4b86b08ba3cc63a7a5a.svg",
     "static/media/slide2.svg": "/netsci2023/static/media/slide2.6b7d51525937f179d2899e9863da2ba8.svg",
+    "static/media/bangmok.png": "/netsci2023/static/media/bangmok.29cf2a8ae1d1f5632fcb.png",
     "static/media/sillok.csv": "/netsci2023/static/media/sillok.15e20be920597ad2f223.csv",
+    "static/media/ggdj.png": "/netsci2023/static/media/ggdj.d7d6f5db9ffec45406fd.png",
     "static/media/19b.svg": "/netsci2023/static/media/19b.081405b6f1e0b3f43bebc8ef79c70302.svg",
     "static/media/18b.svg": "/netsci2023/static/media/18b.187f8c003a2d9ff789e257bf3f4d1743.svg",
     "static/media/17b.svg": "/netsci2023/static/media/17b.9e98f17ad903912f408db242a008c652.svg",
     "static/media/16b.svg": "/netsci2023/static/media/16b.19a6c0cdc3d6ed2b3ced22a1933d995f.svg",
     "static/media/15b.svg": "/netsci2023/static/media/15b.73b947f8550829318b140160813e3f59.svg",
     "static/media/psi-sedoga-gwageo.svg": "/netsci2023/static/media/psi-sedoga-gwageo.fa01d382b7f77bb15e2a946173ee5317.svg",
+    "static/media/yangban.svg": "/netsci2023/static/media/yangban.1255d299bd4767b56f3476a7b96470bc.svg",
+    "static/media/bangmok.jpg": "/netsci2023/static/media/bangmok.81a200519442a3d7fc1a.jpg",
     "static/media/psi-sedoga-psi.svg": "/netsci2023/static/media/psi-sedoga-psi.f081b7a11126909a8a10382fcd1431de.svg",
     "static/media/psi-gini.svg": "/netsci2023/static/media/psi-gini.68eab5473d8bb7fd58b695c8d8aebf4a.svg",
+    "static/media/historymap.svg": "/netsci2023/static/media/historymap.d5add8de03189ffd568ce29dbd6850c4.svg",
     "static/media/18a.svg": "/netsci2023/static/media/18a.89cdc14fefe612f583b954096509d333.svg",
     "static/media/19a.svg": "/netsci2023/static/media/19a.00ec58ce1ba37b27d0ef12e6cdb9011b.svg",
     "static/media/17a.svg": "/netsci2023/static/media/17a.743b0a5a6d58a367efe7a6bb1d776d22.svg",
     "static/media/15a.svg": "/netsci2023/static/media/15a.f920c2e2a0672a7bf1422f1b8eddf5fe.svg",
     "static/media/16a.svg": "/netsci2023/static/media/16a.fdb3977c7cef3b42b7d4564c0561321c.svg",
+    "static/media/ggdj.jpg": "/netsci2023/static/media/ggdj.a3a1cb32d004ea1fca7d.jpg",
+    "static/media/ajd.jpg": "/netsci2023/static/media/ajd.6ef723d3169c5aa05276.jpg",
+    "static/media/government.png": "/netsci2023/static/media/government.148ba6368c2f913c09c9.png",
+    "static/media/timeline.svg": "/netsci2023/static/media/timeline.dcd95e854de4ffb1bf281a2a2006e29b.svg",
     "static/media/heatmap.svg": "/netsci2023/static/media/heatmap.9eeeca1e0960b3f67e62f0f66af3d3e5.svg",
+    "static/media/networkBar.svg": "/netsci2023/static/media/networkBar.db50cf6fbfc46fa158c7d66f96622e76.svg",
     "static/media/tcs.svg": "/netsci2023/static/media/tcs.fc8f9871a6dd775499dd8678b298f6e0.svg",
     "index.html": "/netsci2023/index.html",
-    "main.86e79b76.css.map": "/netsci2023/static/css/main.86e79b76.css.map",
-    "main.e380de56.js.map": "/netsci2023/static/js/main.e380de56.js.map"
+    "main.e64a5375.css.map": "/netsci2023/static/css/main.e64a5375.css.map",
+    "main.219de523.js.map": "/netsci2023/static/js/main.219de523.js.map"
   },
   "entrypoints": [
-    "static/css/main.86e79b76.css",
-    "static/js/main.e380de56.js"
+    "static/css/main.e64a5375.css",
+    "static/js/main.219de523.js"
   ]
 }
