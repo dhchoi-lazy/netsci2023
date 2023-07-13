@@ -1,13 +1,10 @@
 {
   "files": {
     "main.css": "/netsci2023/static/css/main.ef32972e.css",
-    "main.js": "/netsci2023/static/js/main.64f8ee8c.js",
+    "main.js": "/netsci2023/static/js/main.5bdf92f0.js",
     "static/media/ajd2.png": "/netsci2023/static/media/ajd2.fbab8588db57b931bb50.png",
     "static/media/header-none.svg": "/netsci2023/static/media/header-none.ba650de47094b6d566cb4cf0e78a0564.svg",
     "static/media/header-color.svg": "/netsci2023/static/media/header-color.e12814ca9bb9043fbd4952510051e960.svg",
-    "static/media/slide1.svg": "/netsci2023/static/media/slide1.5f7866c76c149d90344ffc7e0ce69635.svg",
-    "static/media/slide3.svg": "/netsci2023/static/media/slide3.ebdcffd2c81aa4b86b08ba3cc63a7a5a.svg",
-    "static/media/slide2.svg": "/netsci2023/static/media/slide2.6b7d51525937f179d2899e9863da2ba8.svg",
     "static/media/bangmok.png": "/netsci2023/static/media/bangmok.29cf2a8ae1d1f5632fcb.png",
     "static/media/sillok.csv": "/netsci2023/static/media/sillok.15e20be920597ad2f223.csv",
     "static/media/ggdj.png": "/netsci2023/static/media/ggdj.d7d6f5db9ffec45406fd.png",
@@ -36,10 +33,10 @@
     "static/media/tcs.svg": "/netsci2023/static/media/tcs.fc8f9871a6dd775499dd8678b298f6e0.svg",
     "index.html": "/netsci2023/index.html",
     "main.ef32972e.css.map": "/netsci2023/static/css/main.ef32972e.css.map",
-    "main.64f8ee8c.js.map": "/netsci2023/static/js/main.64f8ee8c.js.map"
+    "main.5bdf92f0.js.map": "/netsci2023/static/js/main.5bdf92f0.js.map"
   },
   "entrypoints": [
     "static/css/main.ef32972e.css",
-    "static/js/main.64f8ee8c.js"
+    "static/js/main.5bdf92f0.js"
   ]
 }
