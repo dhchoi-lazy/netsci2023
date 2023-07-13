@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/netsci2023/static/css/main.ef32972e.css",
-    "main.js": "/netsci2023/static/js/main.3c733a0b.js",
+    "main.css": "/netsci2023/static/css/main.83bb3e88.css",
+    "main.js": "/netsci2023/static/js/main.fb7d5a9a.js",
     "static/media/ajd2.png": "/netsci2023/static/media/ajd2.fbab8588db57b931bb50.png",
     "static/media/header-none.svg": "/netsci2023/static/media/header-none.ba650de47094b6d566cb4cf0e78a0564.svg",
     "static/media/header-color.svg": "/netsci2023/static/media/header-color.e12814ca9bb9043fbd4952510051e960.svg",
+    "static/media/ct.png": "/netsci2023/static/media/ct.f361c83342a05e1c5fd3.png",
     "static/media/bangmok.png": "/netsci2023/static/media/bangmok.29cf2a8ae1d1f5632fcb.png",
     "static/media/sillok.csv": "/netsci2023/static/media/sillok.15e20be920597ad2f223.csv",
     "static/media/ggdj.png": "/netsci2023/static/media/ggdj.d7d6f5db9ffec45406fd.png",
@@ -25,6 +26,7 @@
     "static/media/15a.svg": "/netsci2023/static/media/15a.f920c2e2a0672a7bf1422f1b8eddf5fe.svg",
     "static/media/16a.svg": "/netsci2023/static/media/16a.fdb3977c7cef3b42b7d4564c0561321c.svg",
     "static/media/ggdj.jpg": "/netsci2023/static/media/ggdj.a3a1cb32d004ea1fca7d.jpg",
+    "static/media/qr.png": "/netsci2023/static/media/qr.87ad2d44fd689dfc764a.png",
     "static/media/ajd.jpg": "/netsci2023/static/media/ajd.6ef723d3169c5aa05276.jpg",
     "static/media/government.png": "/netsci2023/static/media/government.148ba6368c2f913c09c9.png",
     "static/media/timeline.svg": "/netsci2023/static/media/timeline.dcd95e854de4ffb1bf281a2a2006e29b.svg",
@@ -32,11 +34,11 @@
     "static/media/networkBar.svg": "/netsci2023/static/media/networkBar.db50cf6fbfc46fa158c7d66f96622e76.svg",
     "static/media/tcs.svg": "/netsci2023/static/media/tcs.fc8f9871a6dd775499dd8678b298f6e0.svg",
     "index.html": "/netsci2023/index.html",
-    "main.ef32972e.css.map": "/netsci2023/static/css/main.ef32972e.css.map",
-    "main.3c733a0b.js.map": "/netsci2023/static/js/main.3c733a0b.js.map"
+    "main.83bb3e88.css.map": "/netsci2023/static/css/main.83bb3e88.css.map",
+    "main.fb7d5a9a.js.map": "/netsci2023/static/js/main.fb7d5a9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef32972e.css",
-    "static/js/main.3c733a0b.js"
+    "static/css/main.83bb3e88.css",
+    "static/js/main.fb7d5a9a.js"
   ]
 }
