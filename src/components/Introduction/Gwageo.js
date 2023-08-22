@@ -39,17 +39,36 @@ export default function Gwageo() {
     });
 
     // Defines a color scale.
+    const ncolors = ["#bfa86a", "#986abf"];
+    // const colors = [
+    //   "#bf3415",
+    //   "#bfa86a",
+    //   "#a8bf6a",
+    //   "#79bf6a",
+    //   "#6abf89",
+    //   "#6abfb7",
+    //   "#6a98bf",
+    //   "#6a6abf",
+    //   "#986abf",
+    //   "#bf6ab7",
+    // ];
     const colors = [
-      "#bf3415",
-      "#bfa86a",
-      "#a8bf6a",
-      "#79bf6a",
-      "#6abf89",
-      "#6abfb7",
-      "#6a98bf",
-      "#6a6abf",
-      "#986abf",
-      "#bf6ab7",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#e7effd",
+      "#c3d6f7",
+      "#9bbcf0",
+      "#6fa2e9",
+      "#428be3",
+      "#0075de",
+      "#006cd3",
+      "#0045a6",
     ];
 
     const color = d3.scaleOrdinal(colors);
@@ -68,7 +87,7 @@ export default function Gwageo() {
       .attr("fill", (d) => color(d.name));
 
     // Adds a title on the nodes.
-    rect.append("title").text((d) => `${d.name}\n${format(d.value)} TWh`);
+    rect.append("title").text((d) => `${d.name}\n${format(d.value)}`);
 
     // Creates the paths that represent the links.
     const link = svg
@@ -114,7 +133,7 @@ export default function Gwageo() {
       .attr("stroke-width", (d) => Math.max(1, d.width));
 
     gsap.to("#gwageo path", {
-      stroke: "#AFB9B8", // In the style attribute
+      stroke: "#fdf5e7", // In the style attribute
       duration: 3,
       repeat: -1,
       yoyo: true,
@@ -122,9 +141,7 @@ export default function Gwageo() {
 
     link
       .append("title")
-      .text(
-        (d) => `${d.source.name} → ${d.target.name}\n${format(d.value)} TWh`
-      );
+      .text((d) => `${d.source.name} → ${d.target.name}\n${format(d.value)}`);
 
     // Adds labels on the nodes.
     svg
@@ -132,7 +149,7 @@ export default function Gwageo() {
       .selectAll()
       .data(nodes)
       .join("text")
-      .style("font", "15px sans-serif")
+      .style("font", "30px sans-serif")
       .attr("x", (d) => (d.x0 < width / 2 ? d.x1 + 6 : d.x0 - 6))
       .attr("y", (d) => (d.y1 + d.y0) / 2)
       .attr("dy", "0.35em")

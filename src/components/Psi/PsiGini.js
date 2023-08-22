@@ -36,7 +36,7 @@ export default function Psigraph() {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: gini,
       });
     });
@@ -46,9 +46,7 @@ export default function Psigraph() {
 
   return (
     <div>
-      <h1>Psi gini</h1>
       <PsiGiniPlot ref={giniRef} id="gini" />
-      <LoremIpsum p={2}></LoremIpsum>
     </div>
   );
 }

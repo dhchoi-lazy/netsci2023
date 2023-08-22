@@ -36,7 +36,7 @@ export default function Psiheatmap() {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: heatmap,
       });
     });
@@ -44,11 +44,5 @@ export default function Psiheatmap() {
     // or refs
   }, []);
 
-  return (
-    <div>
-      <h1>Psi heatmap</h1>
-      <Heatmap ref={heatmapRef} id="heatmap" />
-      <LoremIpsum p={2}></LoremIpsum>
-    </div>
-  );
+  return <Heatmap ref={heatmapRef} id="heatmap" />;
 }

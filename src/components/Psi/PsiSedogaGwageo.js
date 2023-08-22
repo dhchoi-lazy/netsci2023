@@ -80,18 +80,12 @@ export default function Psigraph() {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: sg,
       });
     });
     // or refs
   }, []);
 
-  return (
-    <div>
-      <h1>Psi gini</h1>
-      <PsiSedogaGwageoPlot ref={sgRef} id="sedogagwageo" />
-      <LoremIpsum p={2}></LoremIpsum>
-    </div>
-  );
+  return <PsiSedogaGwageoPlot ref={sgRef} id="sedogagwageo" />;
 }

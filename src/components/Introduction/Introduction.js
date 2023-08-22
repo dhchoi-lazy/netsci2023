@@ -3,67 +3,228 @@ import { GridNormal, GridHighlight, GridContainer } from "../Layout";
 import LoremIpsum from "react-lorem-ipsum";
 import Bureaucracy from "./Bureaucracy";
 import Gwageo from "./Gwageo";
+import { ReactComponent as Historymap } from "./historymap.svg";
+import { ReactComponent as Timeline } from "./timeline.svg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import gsap from "gsap";
 import Joseon from "./Joseon";
-gsap.registerPlugin(ScrollTrigger);
+import Yangban from "./yangban.svg";
 
 export default function Introduction() {
-  const introductionRef = useRef(null);
-  const numberRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(DrawSVGPlugin);
+  const joseonRef = useRef();
+  const tl = gsap.timeline();
   useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".statistics", {
-        scrollTrigger: {
-          trigger: numberRef.current,
-          start: "top center", // 요소의 상단이 뷰포트의 중앙에 도달하면 시작
-          end: "+=50", // 요소의 하단이 뷰포트의 중앙에서 500px 떨어진 곳에 도달하면 끝
-          scrub: true,
-          markers: true,
-          id: "numbers",
-        },
-        innerText: 0,
-        snap: {
-          innerText: 1,
-        },
-        ease: "power1.inOut",
-      });
-    }, introductionRef.current);
-
-    return () => ctx.revert();
+    tl.fromTo(
+      "path#china",
+      { drawSVG: "0%" },
+      { duration: 1, drawSVG: "100%" }
+    );
+    tl.fromTo(
+      "path#japan",
+      { drawSVG: "0%" },
+      { duration: 1, drawSVG: "100%" }
+    );
+    tl.fromTo(
+      "path#joseon",
+      { drawSVG: "0%" },
+      { duration: 1, drawSVG: "100%" }
+    );
+    tl.fromTo("text", { autoAlpha: 0 }, { autoAlpha: 1 }, "+=1");
+    ScrollTrigger.create({
+      trigger: joseonRef.current,
+      start: "top center",
+      end: "center center",
+      scrub: true,
+      animation: tl,
+      markers: false,
+    });
   }, []);
 
   return (
-    <section id="introduction" ref={introductionRef}>
+    <section id="introduction">
+      <h1>1. Introduction</h1>
+
       <GridContainer>
         <GridNormal>
-          <h1>1. Introduction</h1>
-          <LoremIpsum p={5}></LoremIpsum>
-          <h1 id="trigger">trigger</h1>
-          <div
-            ref={numberRef}
-            className="sillokStatistics"
-            style={{ display: "flex", justifyContent: "space-around" }}
-          >
-            <p className="statistics">300</p>
-            <p className="statistics">500</p>
-            <p className="statistics">600</p>
+          <h2 id="joseonMap">What is Joseon?</h2>
+          <div>
+            <Historymap ref={joseonRef} />
+            <Timeline />
           </div>
         </GridNormal>
+        <GridNormal>
+          <h2>Yangban</h2>
+          <div style={{ display: "flex" }}>
+            <img width="40%" src={Yangban} />
+            <ul>
+              <li>
+                Joseon's <i>de facto</i> noble class(but they are NOT noble)
+              </li>
+              <li>
+                They are differed from the European aristocracy and the Japanese
+                samurais in that the status was not inherited.
+              </li>
+              <li>
+                They could be a 'Yangban' only if they should pass a public
+                examination called, <i>Gwageo</i>.
+              </li>
+              <li>
+                They deeply respected Confucian philosophy and firmly believed
+                that their life's mission and highest honor was to participate
+                in public service.
+              </li>
+            </ul>
+          </div>
+        </GridNormal>
+        <h2>Gwageo exam and Bureaucracy</h2>
         <GridHighlight>
+          <div style={{ height: "20vh" }}></div>
           <Joseon />
         </GridHighlight>
         <GridNormal>
-          <h2>Bureaucracy</h2>
-          <Bureaucracy />
+          <h2>Official grade table</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>Korean</th>
+                <th>English</th>
+                <th>Numeric Value</th>
+              </tr>
+              <tr>
+                <td>정일품</td>
+                <td>1st Rank</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>종일품</td>
+                <td>Junior 1st Rank</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>정이품</td>
+                <td>2nd Rank</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>종이품</td>
+                <td>Junior 2nd Rank</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>정삼품</td>
+                <td>3rd Rank</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>종삼품</td>
+                <td>Junior 3rd Rank</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>정사품</td>
+                <td>4th Rank</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>종사품</td>
+                <td>Junior 4th Rank</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>정오품</td>
+                <td>5th Rank</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>종오품</td>
+                <td>Junior 5th Rank</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>정육품</td>
+                <td>6th Rank</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>종육품</td>
+                <td>Junior 6th Rank</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>정칠품</td>
+                <td>7th Rank</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>종칠품</td>
+                <td>Junior 7th Rank</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>정팔품</td>
+                <td>8th Rank</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>종팔품</td>
+                <td>Junior 8th Rank</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>정구품</td>
+                <td>9th Rank</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>종구품</td>
+                <td>Junior 9th Rank</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul>
+            <li>
+              Joseon employed an eighteen-grade bureaucracy, numbered from one
+              (highest) to nine (lowest) and each divided into Chung (senior)
+              and Chong (junior) subclasses.
+            </li>
+            <li>
+              The highest, 1st Rrank, respectively the top administrative,
+              legislative, and judicial officers corresponding to the modern day
+              Prime Minister, Parliament Speaker, and Chief Justice that
+              constitute the Uijuongbu, king's high council.
+            </li>
+            <li>
+              This basic structure remained intact for nearly the entire
+              lifetime of the kingdom until its modernization reform of 1894 (a
+              mere sixteen years before the kingdom's demise), allowing us to
+              systematically compare different periods separated by up to nearly
+              five centuries.
+            </li>
+          </ul>
         </GridNormal>
-        <GridHighlight>
-          <Gwageo />
-        </GridHighlight>
+        <GridNormal></GridNormal>
+
         <GridNormal>
-          <h1>RQ1</h1>
-          <h1>RQ2</h1>
-          <h1>RQ3</h1>
+          <h2>Research Question</h2>
+          <ol>
+            <li>
+              Who succeeded matters in history. How can we measure how
+              successful the government officials were in the Joseon dynasty?
+            </li>
+            <li>
+              What discernible patterns might emerge from the comprehensive
+              dataset?
+            </li>
+            <li>
+              Could the application of quantitative analysis on these
+              comprehensive records reveal previously unexplored historical
+              insights?
+            </li>
+          </ol>
         </GridNormal>
       </GridContainer>
     </section>

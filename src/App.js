@@ -9,7 +9,7 @@ import Method from "./components/Method/Method";
 import Psi from "./components/Psi/Psi";
 import Conclusion from "./components/Conclusion/Conclusion";
 import Footer from "./components/Footer/Footer";
-
+import QR from "./qr.png";
 function App() {
   return (
     <div className="App">

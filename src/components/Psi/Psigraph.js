@@ -40,7 +40,7 @@ export default function Psigraph() {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: gini,
       });
 
@@ -110,7 +110,7 @@ export default function Psigraph() {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: sg,
       });
 
@@ -120,7 +120,7 @@ export default function Psigraph() {
         start: "top center",
         end: "center center",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: sp,
       });
       sp.fromTo(

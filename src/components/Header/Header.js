@@ -19,7 +19,7 @@ const Header = () => {
       start: "0px end",
       end: "+=60%",
       scrub: true,
-      markers: true,
+      markers: false,
       id: "intro",
     },
   });
@@ -40,7 +40,7 @@ const Header = () => {
           },
           "title"
         )
-        .from("#header-background", { opacity: 0 }, "title")
+        .from("#header-background", { opacity: 0 }, "title-=30%")
         .from(".mountain", { fill: "transparent" }, "mountain")
         .from(".sky", { fill: "transparent" }, "img3")
         .from(".leaves", { fill: "transparent" }, "img3")
@@ -103,8 +103,8 @@ const Header = () => {
         }}
       >
         <span style={{ backgroundColor: "#ebe4f5" }}>
-          A Digital History Approach to the Joseon Dynasty: Focusing on the
-          Yangban and Political History
+          Unraveling the Joseon Dynasty: A Quantitative Approach to Historical
+          Dynamics
         </span>
       </h1>
       <h2

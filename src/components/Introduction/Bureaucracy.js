@@ -20,7 +20,7 @@ export default function Bureaucracy() {
         width * 1.5,
         height * 1.5,
       ])
-      .attr("style", "width: 100%; height: auto; font: 20px sans-serif;");
+      .attr("style", "width: 100%; height: auto; font: 30px sans-serif;");
 
     const tree = d3
       .tree()

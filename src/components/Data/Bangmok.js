@@ -130,10 +130,5 @@ export default function Bangmok() {
     });
     // svg.selectAll(".century").style("margin", "100 auto");
   }, []);
-  return (
-    <>
-      <h1>bangmokbar</h1>
-      <div ref={ref} />
-    </>
-  );
+  return <div ref={ref} />;
 }

@@ -18,6 +18,11 @@ export default function Gyeyu() {
 
   const handleClick = useCallback(
     (node) => {
+      const degree = {};
+      gyeyu.links.forEach((link) => {
+        degree[link.source] = (degree[link.source] || 0) + 1;
+        degree[link.target] = (degree[link.target] || 0) + 1;
+      });
       // Aim at node from outside it
       const distance = 400;
       const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
@@ -39,7 +44,7 @@ export default function Gyeyu() {
 
   return (
     <>
-      <h1>gyeyu</h1>
+      <h2>Constructing a social network and identifying key figures</h2>
       <div
         style={{
           // maxWidth: "800px",

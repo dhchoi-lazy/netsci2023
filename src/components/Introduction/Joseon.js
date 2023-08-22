@@ -1,9 +1,8 @@
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Slide1 from "./slide1.svg";
-import Slide2 from "./slide2.svg";
-import Slide3 from "./slide3.svg";
+import Bureaucracy from "./Bureaucracy.js";
+import Gwageo from "./Gwageo.js";
 
 export default function Joseon() {
   const slideRef = useRef();
@@ -41,7 +40,7 @@ export default function Joseon() {
             delay: 0,
             ease: "sine.inOut",
           },
-          markers: "true",
+          markers: false,
         },
       });
       GSAPHorizontalScrollTL.to(slides, {
@@ -57,21 +56,23 @@ export default function Joseon() {
       id="PageWrap"
       style={{
         height: "100vh",
-        width: "300vw",
+        width: "200vw",
         display: "flex",
         flexWrap: "nowrap",
       }}
     >
       <section className="slide" style={slideStyle}>
-        <img style={sStyle} src={Slide1} alt="korea" />
+        <Gwageo />
+        {/* <img style={sStyle} src={Slide1} alt="korea" /> */}
         {/* <h1>t</h1> */}
       </section>
       <section className="slide" style={slideStyle}>
-        <img style={sStyle} src={Slide2} alt="korea" />
+        <Bureaucracy />
+        {/* <img style={sStyle} src={Slide2} alt="korea" /> */}
       </section>
-      <section className="slide" style={slideStyle}>
-        <img style={sStyle} src={Slide3} alt="korea" />
-      </section>
+      {/* <section className="slide" style={slideStyle}>
+        {/* <img style={sStyle} src={Slide3} alt="korea" /> */}
+      {/* </section>  */}
     </div>
   );
 }
