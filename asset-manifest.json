@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/netsci2023/static/css/main.83bb3e88.css",
-    "main.js": "/netsci2023/static/js/main.9262b756.js",
+    "main.js": "/netsci2023/static/js/main.4edbc4ab.js",
     "static/media/ajd2.png": "/netsci2023/static/media/ajd2.fbab8588db57b931bb50.png",
     "static/media/header-none.svg": "/netsci2023/static/media/header-none.ba650de47094b6d566cb4cf0e78a0564.svg",
     "static/media/header-color.svg": "/netsci2023/static/media/header-color.e12814ca9bb9043fbd4952510051e960.svg",
     "static/media/ct.png": "/netsci2023/static/media/ct.f361c83342a05e1c5fd3.png",
-    "static/media/data_overview.png": "/netsci2023/static/media/data_overview.15f69541e8288e2003ff.png",
+    "static/media/data_overview.png": "/netsci2023/static/media/data_overview.f1c86942fccb79733767.png",
     "static/media/bangmok.png": "/netsci2023/static/media/bangmok.29cf2a8ae1d1f5632fcb.png",
     "static/media/sillok.csv": "/netsci2023/static/media/sillok.15e20be920597ad2f223.csv",
     "static/media/ggdj.png": "/netsci2023/static/media/ggdj.d7d6f5db9ffec45406fd.png",
@@ -36,10 +36,10 @@
     "static/media/tcs.svg": "/netsci2023/static/media/tcs.fc8f9871a6dd775499dd8678b298f6e0.svg",
     "index.html": "/netsci2023/index.html",
     "main.83bb3e88.css.map": "/netsci2023/static/css/main.83bb3e88.css.map",
-    "main.9262b756.js.map": "/netsci2023/static/js/main.9262b756.js.map"
+    "main.4edbc4ab.js.map": "/netsci2023/static/js/main.4edbc4ab.js.map"
   },
   "entrypoints": [
     "static/css/main.83bb3e88.css",
-    "static/js/main.9262b756.js"
+    "static/js/main.4edbc4ab.js"
   ]
 }
